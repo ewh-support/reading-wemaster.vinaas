@@ -564,9 +564,6 @@ i.dollar1 {
     background-color: var(--orange);
 }
 
-.style-a:hover {
-    font-family: 'Roboto-Medium' !important;
-}
 
 .max-width {
     max-width: 150px;
@@ -628,4 +625,11 @@ i.dollar1 {
         padding: 10px;
         min-height: auto;
     }
+}
+.box_shadow{
+    -webkit-box-shadow: 0px 0px 5px 2px #9a9a9a;
+    -moz-box-shadow: 0px 0px 5px 2px #9a9a9a;
+    -o-box-shadow: 0px 0px 5px 2px #9a9a9a;
+    -ms-box-shadow: 0px 0px 5px 2px #9a9a9a;
+    box-shadow: 0px 0px 5px 2px #9a9a9a;
 }
