@@ -74,7 +74,9 @@ a:hover {
 .fs-20 {
     font-size: 20px;
 }
-
+.fs-15 {
+    font-size: 15px;
+}
 // ------BANNER CSS-----
 .ab-text-inner {
     bottom: 50px;
@@ -632,4 +634,30 @@ i.dollar1 {
     -o-box-shadow: 0px 0px 5px 2px #9a9a9a;
     -ms-box-shadow: 0px 0px 5px 2px #9a9a9a;
     box-shadow: 0px 0px 5px 2px #9a9a9a;
+}
+.checked {
+    color: orange;
+}
+.stepper {
+    display: inline-flex;
+    align-items: stretch;
+}
+.stepper-button, .stepper-button-minus, .stepper-button-plus {
+    background-color: #fff;
+    width: 40px;
+    border-radius: 0px;
+    border: 1px solid;
+    color: blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+.hover-a:hover{
+    font-family: 'Roboto-Medium' !important;
 }
