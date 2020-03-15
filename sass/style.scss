@@ -11,7 +11,7 @@ a:active,
 a:hover {
     -webkit-text-decoration: none;
     text-decoration: none;
-    font-family: 'Roboto-Light';
+    font-family: 'K2D', sans-serif !important;
 }
 
 // -----FONT CSS-------
@@ -60,7 +60,8 @@ a:hover {
 }
 
 .font-Roboto-Light {
-    font-family: 'Roboto-Light';
+    font-family: 'K2D', sans-serif !important;
+    font-size: 17px;
 }
 
 .fs-64 {
@@ -74,8 +75,8 @@ a:hover {
 .fs-20 {
     font-size: 20px;
 }
-.fs-15 {
-    font-size: 15px;
+.fs-16 {
+    font-size: 16px;
 }
 // ------BANNER CSS-----
 .ab-text-inner {
@@ -668,6 +669,15 @@ i.dollar1 {
     position: relative;
     cursor: pointer;
 }
+.btn-info-bt{
+    background: #27515C;
+}
+.btn-info-bt:hover{
+    background: #E7643B;
+}
 .hover-a:hover{
     font-family: 'Roboto-Medium' !important;
+}
+.font-k2d{
+    font-family: 'K2D', sans-serif !important;
 }
