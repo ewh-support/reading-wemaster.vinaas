@@ -20,7 +20,7 @@ body {
         url(./../fonts/Roboto-Light.woff) format('woff'), ;
 }
 p {
-    font-family: 'Roboto-Light';
+    font-family: 'K2D', sans-serif !important;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -41,7 +41,7 @@ table a:hover {
     border: none;
     border-radius: 0;
     margin-bottom: 10px;
-    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-btn {
@@ -164,6 +164,7 @@ a.article, a.article:hover {
 #content {
     width: 100%;
     padding: 20px;
+    padding-top: 0px;
     min-height: 100vh;
     transition: all 0.3s;
 }
@@ -387,9 +388,12 @@ a.article, a.article:hover {
     border-left-color: #5bc0de;
 }
 @media (max-width: 991px) {
-   .hide-991{
+    .hide-991{
        display: none;
-   }
+    }
+    .mg-top-mb-20{
+        margin-top: 20px;
+    }
 
 }
 @media (max-width: 768px) {
