@@ -123,9 +123,136 @@
 
         .status-upload form button>i {
             margin-right: 7px;
-        }</style></head><body><header><nav class="navbar navbar-expand-md bg-white navbar-white fixed-top" style="background: rgba(255, 255, 255, 0.9); -webkit-box-shadow:
+        }</style></head><body><style>.zoom {
+            position: fixed;
+            bottom: 25px;
+            right: 24px;
+            height: 70px;
+            z-index: 99;
+        }
+
+        .zoom-fab {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: #009688;
+            vertical-align: middle;
+            text-decoration: none;
+            text-align: center;
+            transition: 0.2s ease-out;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            color: #FFF;
+        }
+
+        .zoom-fab:hover {
+            background-color: #4db6ac;
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        .zoom-btn-large {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .zoom-menu {
+            position: absolute;
+            right: 0;
+            left: auto;
+            top: 0;
+            transform: translateY(-100%);
+            list-style: none;
+            padding-left: 0;
+        }
+        .fab-label{
+            background-color: #fff;
+            position: absolute;
+            right: 55px;
+            width: 150px;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        }
+        .zoom-menu li {
+            display: block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .zoom-card {
+            position: absolute;
+            right: 150px;
+            bottom: 70px;
+            transition: box-shadow 0.25s;
+            padding: 24px;
+            border-radius: 2px;
+            background-color: #009688;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            color: #FFF;
+        }
+
+        .zoom-card ul {
+            -webkit-padding-start: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .zoom-btn-person {
+            background-color: #F44336;
+        }
+
+        .zoom-btn-person:hover {
+            background-color: #e57373;
+        }
+
+        .zoom-btn-doc {
+            background-color: #ffeb3b;
+        }
+
+        .zoom-btn-doc:hover {
+            background-color: #fff176;
+        }
+
+        .zoom-btn-tangram {
+            background-color: #4CAF50;
+        }
+
+        .zoom-btn-tangram:hover {
+            background-color: #81c784;
+        }
+
+        .zoom-btn-report {
+            background-color: #2196F3;
+        }
+
+        .zoom-btn-report:hover {
+            background-color: #64b5f6;
+        }
+
+        .zoom-btn-feedback {
+            background-color: #9c27b0;
+        }
+
+        .zoom-btn-feedback:hover {
+            background-color: #ba68c8;
+        }
+
+        .scale-transition {
+            transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+        }
+
+        .scale-transition.scale-out {
+            transform: scale(0);
+            transition: transform 0.2s !important;
+        }
+
+        .scale-transition.scale-in {
+            transform: scale(1);
+        }</style><header><nav class="navbar navbar-expand-md bg-white navbar-white fixed-top" style="background: rgba(255, 255, 255, 0.9); -webkit-box-shadow:
                 0 0 3px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 0 3px 0 rgba(0, 0,
-                0, 0.1)"><div class="container"><a class="navbar-brand" href="/"><img class="logo_image" style="width: 70px" src="http://wemaster.vn/img/logo.png" alt="wemaster"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="collapsibleNavbar"><ul class="navbar-nav ml-auto"></ul></div></div></nav></header><div id="my-scrollbar" style="padding-top: 60px"><div class="fixed-bottom p-3 style-fix show-768"><ul class="nav fnav-pills nav-fill"><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/lich-su-doc"><i class="fa fa-history fa-lg" aria-hidden="true" style="margin-right: 5px"></i></a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link active font-Roboto-Light text-white" href="/san-pham"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true" style="margin-right: 5px"></i></a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/"><i class="fa fa-share-alt-square fa-lg" aria-hidden="true" style="margin-right: 5px"></i></a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/"><i class="fa fa-envelope fa-lg" aria-hidden="true" style="margin-right: 5px"></i></a></li></ul></div><div class="fixed-bottom p-3 style-fix hide-768" style="left: auto"><ul class="nav flex-column"><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/lich-su-doc"><i class="fa fa-history" aria-hidden="true" style="margin-right: 5px"></i>Lịch sử đọc</a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link active font-Roboto-Light text-white" href="/san-pham"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 5px"></i>Đặt mua sách</a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/"><i class="fa fa-share-alt-square" aria-hidden="true" style="margin-right: 5px"></i>Chia sẽ đọc sách</a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/"><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 5px"></i>Liên hệ</a></li></ul></div><div class="container pb-5"><div class="row mt-3"><div class="col-md-4 text-center mb-3"><img class="mw-100" src="/images/bia-sach-1.jpg" alt=""/></div><div class="col-md-8"><div><h2 class="font-k2d" style="color:#27515C;
+                0, 0.1)"><div class="container"><a class="navbar-brand" href="/"><img class="logo_image" style="width: 70px" src="http://wemaster.vn/img/logo.png" alt="wemaster"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="collapsibleNavbar"><ul class="navbar-nav ml-auto"></ul></div></div></nav></header><div id="my-scrollbar" style="padding-top: 60px"><div class="zoom"><a class="zoom-fab zoom-btn-large" id="zoomBtn"><i class="fa fa-th-large fa-lg" style="color: #fff" aria-hidden="true"></i></a><ul class="zoom-menu"><li><a style="color: #222" href="/lich-su-doc" class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out"><i class="fa fa-history" aria-hidden="true" style="color: #fff"></i><span class="fab-label">Lịch sử đọc</span></a></li><li><a style="color: #222" href="/san-pham" class="zoom-fab zoom-btn-sm zoom-btn-doc scale-transition scale-out"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: #fff"></i><span class="fab-label">Đặt mua sách</span></a></li><li><a style="color: #222" class="zoom-fab zoom-btn-sm zoom-btn-tangram scale-transition scale-out"><i class="fa fa-share-alt-square" aria-hidden="true" style="color: #fff"></i><span class="fab-label">Chia sẽ đọc sách</span></a></li><li><a style="color: #222" class="zoom-fab zoom-btn-sm zoom-btn-report scale-transition scale-out"><i class="fa fa-envelope" aria-hidden="true" style="color: #fff"></i><span class="fab-label">Liên hệ</span></a></li></ul></div><div class="container pb-5"><div class="row mt-3"><div class="col-md-4 text-center mb-3"><img class="mw-100" src="/images/bia-sach-1.jpg" alt=""/></div><div class="col-md-8"><div><h2 class="font-k2d" style="color:#27515C;
                                 text-transform: capitalize; font-weight: bold">Có một cơn đau mang tên trầm cảm</h2><p class="font-Roboto-Light fs-15">Thật khó mô tả nỗi đau mà trầm cảm gây ra cho người thân yêu của chúng ta. Bởi chỉ khi ngã vào nó rồi, ta mới biết nó đáng sợ, và xấu xí đến nhường nào. Hành trình đồng hành cùng người thân vượt qua trầm cảm thật khó khăn và đầy thách thức. Nếu bạn loay hoay chưa biết bắt đầu từ đâu, chúng tôi nghĩ “Có một cơn đau mang tên trầm cảm” là một khởi đầu tốt cho bạn và người thân của mình.</p><div><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="text-info font-Roboto-Light fs-15">(Có 100 người đánh giá)</span></div><div><nav class="nav flex-column"><a class="flex-sm-fill nav-link pb-0" style="padding-left: 0px; font-size: 15px" href="#">Tác giả: PGS. TS. Nguyễn Phương Hoa</a> <a class="flex-sm-fill nav-link disabled pb-0" style="padding-left: 0px; font-size: 15px"><span style="color: #999">ISBN:</span> 978-604-68-5927-7</a> <a class="flex-sm-fill nav-link disabled pb-0" style="padding-left: 0px; font-size: 15px"><span style="color: #999">Thể loại:</span> SÁCH PHỔ BIẾN, Tâm lý ứng dụng</a> <a class="flex-sm-fill nav-link disabled pb-0" style="padding-left: 0px; font-size: 15px"><span style="color: #999">Thẻ:</span> Anbooks, Anbooks ra mắt sách trầm cảm, PGS. TS Nguyễn Thị Phương Hoa, trầm cảm</a> <a class="flex-sm-fill nav-link disabled" style="padding-left: 0px; font-size: 15px"><span style="color: #999">Nhà xuất bản:</span> NXB Văn hóa - Văn nghệ</a></nav></div><div><div class="d-flex"><div class="input-group-prepend"><span class="input-group-text text-primary font-Roboto-Medium fs-20">99.000 VND</span></div><input type="text" style="max-width: 200px; height: 44px" class="form-control ml-3 font-Roboto-Light fs-15" placeholder="Mã giảm giá"></div><p class="saleoff-price-item font-Roboto-Light fs-15" style="padding-top: 10px; color: #999"><span class="price-label">Giảm được:</span> <span id="span-discount-percent" class="discount-percent">26%</span> <span id="span-saving-price">(31.000đ) với mã giảm giá</span></p><div class="row"><div class="col-6 col-md-3"><div class="input-group"><span class="input-group-btn bg-secondary" style="width: 40px; text-align: center"><button class="btn btn-white btn-minuse text-white" type="button">-</button> </span><input type="text" class="form-control no-padding abc add-color text-center height-25" maxlength="3" value="1"> <span class="input-group-btn bg-secondary" style="width: 40px; text-align: center"><button class="btn btn-red btn-pluss text-white" type="button">+</button></span></div></div><div class="col-6 col-md-4"><button type="button" style="width: 100%; height: 38px" class="btn btn-danger font-Roboto-Medium fs-15"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CHỌN MUA</button></div></div><div class="mt-3" style="display: flex; align-items: center"><img src="./images/bound-24.png" alt=""><a class="font-Roboto-Medium fs-15 hover-a" href="" style="margin-left: 10px">Mua sách ở Tiki tại đây</a></div></div></div></div></div><div class="accordion mt-3" id="accordionExample"><div class="card"><div class="card-header" id="headingOne"><button class="btn btn-link font-k2d p-0 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #27515C; font-weight: bold;
                             font-size: 17px">Mô tả sách</button></div><div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"><div class="card-body"><p class="font-Roboto-Light fs-15 text-justify">* Có những ngày thật khó để hiểu vì sao người thân của chúng ta kéo kín rèm, khóa trái cửa, từ chối tiếp xúc với ánh sáng và mọi người.<br/>* Vì sao họ lại đắm chìm trong phim, các trò chơi và những thói quen không tốt, từ ngày này qua ngày khác.<br/>* Vì sao họ cáu giận bởi những chuyện lẽ ra hết sức bình thường?<br/>* Và vì sao, thỉnh thoảng, đến cả việc ngồi dậy rời khỏi giường, cũng làm họ tuyệt vọng?<br/><br/>Thật khó mô tả nỗi đau mà trầm cảm gây ra cho người thân yêu của chúng ta. Bởi chỉ khi ngã vào nó rồi, ta mới biết nó đáng sợ, và xấu xí đến nhường nào. Hành trình đồng hành cùng người thân vượt qua trầm cảm thật khó khăn và đầy thách thức. Nếu bạn loay hoay chưa biết bắt đầu từ đâu, chúng tôi nghĩ “Có một cơn đau mang tên trầm cảm” là một khởi đầu tốt cho bạn và người thân của mình.</p></div></div></div><div class="card"><div class="card-header" id="headingTwo"><button class="btn btn-link collapsed font-k2d p-0 text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #27515C; font-weight: bold;
                             font-size: 17px">Chi tiết sách</button></div><div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample"><div class="card-body"><div><nav class="nav flex-column"><a class="flex-sm-fill nav-link disabled pb-0" style="padding-left: 0px; font-size: 15px"><span style="color: #999">ISBN:</span> 978-604-68-5927-7</a> <a class="flex-sm-fill nav-link disabled pb-0" style="padding-left: 0px; font-size: 15px"><span style="color: #999">Số trang:</span> 280</a> <a class="flex-sm-fill nav-link disabled pb-0" style="padding-left: 0px; font-size: 15px"><span style="color: #999">Kích thước:</span> 13x19cm</a> <a class="flex-sm-fill nav-link disabled pb-0" style="padding-left: 0px; font-size: 15px"><span style="color: #999">Ngày phát hành:</span> 11/2019</a> <a class="flex-sm-fill nav-link disabled" style="padding-left: 0px; font-size: 15px"><span style="color: #999">Nhà xuất bản:</span> NXB Văn hóa - Văn nghệ</a></nav></div></div></div></div><div class="card"><div class="card-header" id="headingThree"><button class="btn btn-link collapsed font-k2d p-0 text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #27515C; font-weight: bold;
@@ -198,4 +325,29 @@
                     hiddenDiv.style.display = 'none';
                 });
             })(i);
-        }</script></body></html>
+        }
+        $('#zoomBtn').click(function () {
+            $('.zoom-btn-sm').toggleClass('scale-out');
+            if (!$('.zoom-card').hasClass('scale-out')) {
+                $('.zoom-card').toggleClass('scale-out');
+            }
+        });
+
+        $('.zoom-btn-sm').click(function () {
+            var btn = $(this);
+            var card = $('.zoom-card');
+            if ($('.zoom-card').hasClass('scale-out')) {
+                $('.zoom-card').toggleClass('scale-out');
+            }
+            if (btn.hasClass('zoom-btn-person')) {
+                card.css('background-color', '#d32f2f');
+            } else if (btn.hasClass('zoom-btn-doc')) {
+                card.css('background-color', '#fbc02d');
+            } else if (btn.hasClass('zoom-btn-tangram')) {
+                card.css('background-color', '#388e3c');
+            } else if (btn.hasClass('zoom-btn-report')) {
+                card.css('background-color', '#1976d2');
+            } else {
+                card.css('background-color', '#7b1fa2');
+            }
+        });</script></body></html>

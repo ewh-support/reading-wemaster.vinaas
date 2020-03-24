@@ -1,14 +1,166 @@
-<!DOCTYPE html><html lang="en" style="overflow: hidden"><head><title>Readding WeMaster</title><meta name="viewport" content="width=device-width,initial-scale=1"/><meta charset="UTF-8"/><meta name="keywords" content=""/><link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="/css/style.css" type="text/css" media="all"/><link href="https://fonts.googleapis.com/css?family=K2D:400,700&amp;subset=vietnamese" rel="stylesheet"><link href="/css/font-awesome.css" rel="stylesheet"/><link rel="stylesheet" type="text/css" href="/slick/slick.css"/><link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/></head><body><header><nav class="navbar navbar-expand-md bg-white navbar-white fixed-top" style="background: rgba(255, 255, 255, 0.9); -webkit-box-shadow:
+<!DOCTYPE html><html lang="en" style="overflow: hidden"><head><title>Readding WeMaster</title><meta name="viewport" content="width=device-width,initial-scale=1"/><meta charset="UTF-8"/><meta name="keywords" content=""/><link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="/css/style.css" type="text/css" media="all"/><link href="https://fonts.googleapis.com/css?family=K2D:400,700&amp;subset=vietnamese" rel="stylesheet"><link href="/css/font-awesome.css" rel="stylesheet"/><link rel="stylesheet" type="text/css" href="/slick/slick.css"/><link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/></head><body><style>.zoom {
+            position: fixed;
+            bottom: 25px;
+            right: 24px;
+            height: 70px;
+            z-index: 99;
+        }
+
+        .zoom-fab {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: #009688;
+            vertical-align: middle;
+            text-decoration: none;
+            text-align: center;
+            transition: 0.2s ease-out;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            color: #FFF;
+        }
+
+        .zoom-fab:hover {
+            background-color: #4db6ac;
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        .zoom-btn-large {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .zoom-menu {
+            position: absolute;
+            right: 0;
+            left: auto;
+            top: 0;
+            transform: translateY(-100%);
+            list-style: none;
+            padding-left: 0;
+        }
+        .fab-label{
+            background-color: #fff;
+            position: absolute;
+            right: 55px;
+            width: 150px;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        }
+        .zoom-menu li {
+            display: block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .zoom-card {
+            position: absolute;
+            right: 150px;
+            bottom: 70px;
+            transition: box-shadow 0.25s;
+            padding: 24px;
+            border-radius: 2px;
+            background-color: #009688;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            color: #FFF;
+        }
+
+        .zoom-card ul {
+            -webkit-padding-start: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .zoom-btn-person {
+            background-color: #F44336;
+        }
+
+        .zoom-btn-person:hover {
+            background-color: #e57373;
+        }
+
+        .zoom-btn-doc {
+            background-color: #ffeb3b;
+        }
+
+        .zoom-btn-doc:hover {
+            background-color: #fff176;
+        }
+
+        .zoom-btn-tangram {
+            background-color: #4CAF50;
+        }
+
+        .zoom-btn-tangram:hover {
+            background-color: #81c784;
+        }
+
+        .zoom-btn-report {
+            background-color: #2196F3;
+        }
+
+        .zoom-btn-report:hover {
+            background-color: #64b5f6;
+        }
+
+        .zoom-btn-feedback {
+            background-color: #9c27b0;
+        }
+
+        .zoom-btn-feedback:hover {
+            background-color: #ba68c8;
+        }
+
+        .scale-transition {
+            transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+        }
+
+        .scale-transition.scale-out {
+            transform: scale(0);
+            transition: transform 0.2s !important;
+        }
+
+        .scale-transition.scale-in {
+            transform: scale(1);
+        }</style><header><nav class="navbar navbar-expand-md bg-white navbar-white fixed-top" style="background: rgba(255, 255, 255, 0.9); -webkit-box-shadow:
                 0 0 3px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 0 3px 0 rgba(0, 0,
-                0, 0.1)"><div class="container"><a class="navbar-brand" href="#"><img class="logo_image" style="width: 70px" src="http://wemaster.vn/img/logo.png" alt="wemaster"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="collapsibleNavbar"><ul class="navbar-nav ml-auto"></ul></div></div></nav></header><div id="my-scrollbar" style="padding-top: 60px"><div class="fixed-bottom p-3 style-fix show-768"><ul class="nav fnav-pills nav-fill"><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/lich-su-doc"><i class="fa fa-history fa-lg" aria-hidden="true" style="margin-right: 5px"></i></a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link active font-Roboto-Light text-white" href="/san-pham"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true" style="margin-right: 5px"></i></a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/"><i class="fa fa-share-alt-square fa-lg" aria-hidden="true" style="margin-right: 5px"></i></a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/"><i class="fa fa-envelope fa-lg" aria-hidden="true" style="margin-right: 5px"></i></a></li></ul></div><div class="fixed-bottom p-3 style-fix hide-768" style="left: auto"><ul class="nav flex-column"><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/lich-su-doc"><i class="fa fa-history" aria-hidden="true" style="margin-right: 5px"></i>Lịch sử đọc</a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link active font-Roboto-Light text-white" href="/san-pham"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 5px"></i>Đặt mua sách</a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/"><i class="fa fa-share-alt-square" aria-hidden="true" style="margin-right: 5px"></i>Chia sẽ đọc sách</a></li><li class="nav-item btn-info-bt text-white"><a class="nav-link font-Roboto-Light text-white" href="/"><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 5px"></i>Liên hệ</a></li></ul></div><div class="text-center"><img class="mw-100" src="/images/unnamed.png" alt=""></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script><script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script><script src="https://unpkg.com/vue-select@3.0.0"></script><link rel="stylesheet" href="https://unpkg.com/vue-select@3.0.0/dist/vue-select.css"/><script src="/jquery/jquery-3.4.1.min.js" type="text/javascript"></script><script src="/bootstrap/js/popper.min.js" type="text/javascript"></script><script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><script src="/slick/slick.js" type="text/javascript" charset="utf-8"></script><script src="/smooth/smooth-scrollbar.js"></script><script>// var Scrollbar = window.Scrollbar;
-            // Scrollbar.init(document.getElementById('my-scrollbar'), {
-            //     speed: 0.8,
-            //     damping: 0.2
-            // });
-            // $(".lazy").slick({
-            //     lazyLoad: 'ondemand', // ondemand progressive anticipated
-            //     infinite: true
-            // });</script><script>Vue.component("v-select", VueSelect.VueSelect);
+                0, 0.1)"><div class="container"><a class="navbar-brand" href="#"><img class="logo_image" style="width: 70px" src="http://wemaster.vn/img/logo.png" alt="wemaster"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="collapsibleNavbar"><ul class="navbar-nav ml-auto"></ul></div></div></nav></header><div id="my-scrollbar" style="padding-top: 60px"><div class="zoom"><a class="zoom-fab zoom-btn-large" id="zoomBtn"><i class="fa fa-th-large fa-lg" style="color: #fff" aria-hidden="true"></i></a><ul class="zoom-menu"><li><a style="color: #222" href="/lich-su-doc" class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out"><i class="fa fa-history" aria-hidden="true" style="color: #fff"></i><span class="fab-label">Lịch sử đọc</span></a></li><li><a style="color: #222" href="/san-pham" class="zoom-fab zoom-btn-sm zoom-btn-doc scale-transition scale-out"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: #fff"></i><span class="fab-label">Đặt mua sách</span></a></li><li><a style="color: #222" class="zoom-fab zoom-btn-sm zoom-btn-tangram scale-transition scale-out"><i class="fa fa-share-alt-square" aria-hidden="true" style="color: #fff"></i><span class="fab-label">Chia sẽ đọc sách</span></a></li><li><a style="color: #222" class="zoom-fab zoom-btn-sm zoom-btn-report scale-transition scale-out"><i class="fa fa-envelope" aria-hidden="true" style="color: #fff"></i><span class="fab-label">Liên hệ</span></a></li></ul></div><div class="text-center pt-5"><img class="mw-100" src="/images/web-maintenance.png" alt=""></div><div class="font-Roboto-Light text-center p-3">Chúng tôi hiện đang xây dựng Website, hi vọng bạn sẽ viếng thăm Website của chúng tôi sau khi đã hoàn thành!</div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script><script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script><script src="https://unpkg.com/vue-select@3.0.0"></script><link rel="stylesheet" href="https://unpkg.com/vue-select@3.0.0/dist/vue-select.css"/><script src="/jquery/jquery-3.4.1.min.js" type="text/javascript"></script><script src="/bootstrap/js/popper.min.js" type="text/javascript"></script><script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><script src="/slick/slick.js" type="text/javascript" charset="utf-8"></script><script src="/smooth/smooth-scrollbar.js"></script><script>// var Scrollbar = window.Scrollbar;
+        // Scrollbar.init(document.getElementById('my-scrollbar'), {
+        //     speed: 0.8,
+        //     damping: 0.2
+        // });
+        // $(".lazy").slick({
+        //     lazyLoad: 'ondemand', // ondemand progressive anticipated
+        //     infinite: true
+        // });
+        $('#zoomBtn').click(function () {
+            $('.zoom-btn-sm').toggleClass('scale-out');
+            if (!$('.zoom-card').hasClass('scale-out')) {
+                $('.zoom-card').toggleClass('scale-out');
+            }
+        });
+
+        $('.zoom-btn-sm').click(function () {
+            var btn = $(this);
+            var card = $('.zoom-card');
+            if ($('.zoom-card').hasClass('scale-out')) {
+                $('.zoom-card').toggleClass('scale-out');
+            }
+            if (btn.hasClass('zoom-btn-person')) {
+                card.css('background-color', '#d32f2f');
+            } else if (btn.hasClass('zoom-btn-doc')) {
+                card.css('background-color', '#fbc02d');
+            } else if (btn.hasClass('zoom-btn-tangram')) {
+                card.css('background-color', '#388e3c');
+            } else if (btn.hasClass('zoom-btn-report')) {
+                card.css('background-color', '#1976d2');
+            } else {
+                card.css('background-color', '#7b1fa2');
+            }
+        });</script><script>Vue.component("v-select", VueSelect.VueSelect);
         var vue = new Vue({
             el: "#app-vue",
             data: {},
