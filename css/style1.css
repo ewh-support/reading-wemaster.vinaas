@@ -1,0 +1,42 @@
+#my-scrollbar {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-family: 'Roboto-Light';
+}
+.box-form{
+    width: 27%; 
+    margin-top: -40px;
+}
+.box-sp{
+    width: 73%;
+}
+.box-sp img{
+    width: 73%;
+}
+.style-box-form{
+    width: calc(100% - 150px);
+    margin: 0 auto;
+}
+.style-inner-box-form{
+    width: 80%; 
+    margin: 0 auto;
+}
+@media (max-width: 1025px) {
+    .style-box-form{
+        width: calc(100% - 50px); 
+        margin: 0 auto;
+    }
+    .style-inner-box-form{
+        width: 84%;
+    }
+}

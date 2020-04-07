@@ -11,7 +11,7 @@ a:active,
 a:hover {
     -webkit-text-decoration: none;
     text-decoration: none;
-    font-family: 'Roboto-Light';
+    font-family: 'K2D', sans-serif !important;
 }
 
 // -----FONT CSS-------
@@ -60,7 +60,8 @@ a:hover {
 }
 
 .font-Roboto-Light {
-    font-family: 'Roboto-Light';
+    font-family: 'K2D', sans-serif !important;
+    font-size: 17px;
 }
 
 .fs-64 {
@@ -74,7 +75,9 @@ a:hover {
 .fs-20 {
     font-size: 20px;
 }
-
+.fs-16 {
+    font-size: 16px;
+}
 // ------BANNER CSS-----
 .ab-text-inner {
     bottom: 50px;
@@ -564,9 +567,6 @@ i.dollar1 {
     background-color: var(--orange);
 }
 
-.style-a:hover {
-    font-family: 'Roboto-Medium' !important;
-}
 
 .max-width {
     max-width: 150px;
@@ -579,7 +579,17 @@ i.dollar1 {
 .card-body {
     padding: 15px;
 }
-
+.show-768{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .show-768{
+        display: block;
+    }
+    .hide-768{
+        display: none;
+    }
+}
 @media screen and (max-width: 767px) {
     h5 {
         margin-bottom: 0px;
@@ -628,4 +638,46 @@ i.dollar1 {
         padding: 10px;
         min-height: auto;
     }
+}
+.box_shadow{
+    -webkit-box-shadow: 0px 0px 5px 2px #9a9a9a;
+    -moz-box-shadow: 0px 0px 5px 2px #9a9a9a;
+    -o-box-shadow: 0px 0px 5px 2px #9a9a9a;
+    -ms-box-shadow: 0px 0px 5px 2px #9a9a9a;
+    box-shadow: 0px 0px 5px 2px #9a9a9a;
+}
+.checked {
+    color: orange;
+}
+.stepper {
+    display: inline-flex;
+    align-items: stretch;
+}
+.stepper-button, .stepper-button-minus, .stepper-button-plus {
+    background-color: #fff;
+    width: 40px;
+    border-radius: 0px;
+    border: 1px solid;
+    color: blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+.btn-info-bt{
+    background: #27515C;
+}
+.btn-info-bt:hover{
+    background: #E7643B;
+}
+.hover-a:hover{
+    font-family: 'Roboto-Medium' !important;
+}
+.font-k2d{
+    font-family: 'K2D', sans-serif !important;
 }
